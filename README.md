@@ -1,2 +1,2 @@
 # exerciciosLogica
- programas Feitos para exercitar a lógica de pogrmação usando JavaScript
+ programas Feitos para exercitar a lógica de programação usando JavaScript
