@@ -1,0 +1,22 @@
+<script>
+    // Algoritmo vai ler duas notas e definir se o aluno está aprovado, de recuperação ou reprovado
+
+    // Declaração de variaveis 
+    let n1;
+    let n2;
+    let media;
+
+    // Entrada de dados e processamento
+    n1 = Number(prompt('Digite a primeira nota: '))
+    n2 = Number(prompt('Digite a segunda nota: '))
+    media = (n1 + n2) / 2
+
+    // Estrutura condicional composta
+    if (media >= 7) {
+        document.write(`NOTA <strong>${media}</strong> APROVADO, PARABÉNS!!`)
+    } else if (media > 5 && media < 7){
+        document.write(`NOTA <strong>${media}</strong> RECUPERAÇÃO!!`)
+    } else {
+        document.write(`NOTA <strong>${media}</strong> REPROVADO, ESTUDE MAIS ANO QUE VEM !!`) 
+    }
+</script>

@@ -1,0 +1,26 @@
+<script>
+    // algoritmo que vai determinar se um ano é bissexto ou não
+
+    // declaraçã ode variaveis
+    let ano;
+    let anoCalc;
+    
+    // entrada e processamento de dados
+    ano = Number(prompt('Digite o ano que você deseja calcular'));
+    
+
+    // estrutura condicional
+    if (ano % 400 == 0 || ano % 4 == 0 && ano % 100 != 0) {
+        document.write(`O ano digitado ${ano} é um ano bissexto`)
+    } else {
+        document.write(`O ano digitado ${ano} não é um ano bissexto`)
+    }
+
+
+
+
+
+
+
+
+</script>

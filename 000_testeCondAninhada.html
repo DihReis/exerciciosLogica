@@ -1,0 +1,29 @@
+<script>
+    let n1;
+    let n2;
+    let n3;
+    let n4;
+    let resposta;
+
+    n1 = Number(prompt('Digite o primeiro número: '))
+    n2 = Number(prompt('Digite o segundo número: '))
+    n3 = Number(prompt('Digite o terceiro número: '))
+    n4 = Number(prompt('Digite o quarto número: '))
+
+    if(n1 > n2 && n1 > n3 && n1 > n4)
+    {
+        resposta = document.write(`O primeiro número ${n1} é o maior:`);
+    }   else if(n2 > n3 && n2 > n4)
+        {
+            resposta = document.write(`O segundo número ${n2} é o maior:`)
+        }   else if(n3 > n4)
+                {
+                resposta = document.write(`O terceiro número ${n3} é o maior:`)
+                }else
+                {
+                    resposta = document.write(`O quarto número ${n4} é o maior:`)
+    }
+    
+
+
+</script>

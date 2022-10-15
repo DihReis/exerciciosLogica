@@ -1,0 +1,23 @@
+<script>
+    // Algoritmo calcula quantos dias de vida um fumante perde por cada cigarro que fuma
+    
+    //declaração de variaveis
+
+    let cigDia;
+    let cigAnos;
+    let perdaDias;
+    let perdaMin;
+
+    //entrada e processamento de dados
+
+    cigDia = Number.parseInt(prompt('Digite a quantidade de cigarros por dia: '));
+    cigAnos = Number.parseInt(prompt('Digite por quantos anos você fumou: '));
+    perdaMin = cigAnos * 365 * cigDia * 10; // a cada cigarro ser perde 10 minutos de vida
+    perdaDias = Number.parseInt(perdaMin / (24*60));
+
+    // Saida de dados
+
+    document.write(`você perdeu ${perdaMin} minutos da sua vida <br>`);
+    document.write(`você perdeu ${perdaDias} dias da sua vida`);
+
+</script>

@@ -1,0 +1,20 @@
+<script>
+    // Programa para verificar se o jovem está na época do exercito, quanto tempo falta para se alistar e quanto tempo passou do alistamento
+
+    // declaração de variaveis
+    let anoAtual;
+    let anoNasc;
+    let idade;
+
+    // atribuição de valores as variaveis e processamento
+    anoAtual = Number(prompt('Digite o ano atual: '));
+    anoNasc = Number(prompt('Digite o ano de nascimento: '))
+    idade = anoAtual - anoNasc;
+
+    // estrutura condicional (verificação)
+    if (idade < 18) {
+        document.write(`Sua idade é ${idade} anos, faltam ${18 - idade}anos para você se alistar`)
+    } else {
+        document.write(`Sua idade é ${idade} anos, você ultrapassou ${idade - 18} anos do periodo de alistamentoalistar`)
+    }
+</script>

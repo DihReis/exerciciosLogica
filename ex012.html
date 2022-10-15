@@ -1,0 +1,20 @@
+<script>
+    // declraçaão de variaveis
+    let produto;
+    let desconto;
+    let precoPromocional;
+
+    // entrada de dados
+    produto =Number(prompt('Digite o valor do produto:'));
+
+    // processamento de dados
+    desconto = (5 * produto) / 100;
+    precoPromocional = produto - desconto;
+
+    // Saida de dados
+    document.write(desconto + "<br>");
+    document.write(precoPromocional + "<br>");
+    alert(`O valor final do produto com desconto é de ${precoPromocional}`);
+
+
+</script>

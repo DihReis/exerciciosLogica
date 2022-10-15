@@ -1,0 +1,24 @@
+<script>
+    // Algoritmo vai identificar o sexo do cliente e vai prover um desconto de acordo
+    // Homem recebe 5% de desconto
+    // Mulher recebe 13% de desconto
+
+    // declaração de variaveis
+    let nome;
+    let sexo;
+    let valorCompra;
+
+    // atribuição de valores as variaveis e processamento
+    nome = prompt('Digite o nome: ');
+    sexo = prompt('Digite o sexo: ');
+    valorCompra = Number(prompt('Digite o valor das suas compras')).toFixed('2');
+    descMulher = (valorCompra * 13) / 100;
+    descHomem = (valorCompra * 5) / 100;
+
+    //estrutura condicional
+    if (sexo == 'feminino') {
+        document.write(`O valor das suas compras é de ${valorCompra - descMulher.toFixed('2')}R$ com o desconto especial de dia das mulheres`);
+    } else {
+        document.write(`O valor das suas compras é de ${valorCompra - descHomem.toFixed('2')}R$ com o desconto especial de dia das mulheres`);
+    }
+</script>

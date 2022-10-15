@@ -1,0 +1,21 @@
+<script>
+    // Algoritmo vai calcular o preço de uma pssagem de acordo com a distância que a pessoa vai percorrer
+
+
+    // Declaração de variaveis
+    let km;
+
+    // Entrada de dados e processamento
+    km = Number(prompt('Digite a distância que vai ser percorrida: '))
+    taxa1 = Number(0.50)
+    taxa2 = Number(0.45)
+
+    // estrutura condicional simples
+    if (km <= 200) { 
+        document.write(`O preço da passagem é de ${km * taxa1} R$`)
+    } else {
+        document.write(`O preço da passagem é de ${km * taxa2} R$`)
+    }
+
+
+</script>

@@ -1,0 +1,18 @@
+<script>
+    // algoritmo com intuito de calcular uma multa de acordo com a KM ultrapassada
+    
+    // Limite de velocidade de 80Km
+
+    // declaração de variaveis 
+    let vel;
+    let multa;
+
+    // entrada de dados e atribuição de valores as variaveis
+    vel = Number(prompt('Digite a velocidade do veiculo: '))
+
+    // estrutura condicional simples (IF)
+    if(vel > 80){
+        multa = (vel - 80) * 5 // atribuição de valor a var multa    
+    }
+    document.write(`O valor da multa é de ${multa} R$`)
+</script>
